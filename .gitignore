@@ -1,0 +1,17 @@
+.idea
+.bin
+node_modules
+*.iml
+typescript
+*.log
+quicktest.js
+quicktest
+.project
+.settings
+.metadata
+.eclipse
+new/*
+tmp/*
+dist/*
+package-lock.json
+coverage

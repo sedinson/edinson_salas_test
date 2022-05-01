@@ -1,0 +1,20 @@
+{
+  "name": "@distributed-lru/communication",
+  "version": "1.0.0",
+  "description": "Communication Socket server",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": "^16.14.2",
+    "npm": "^8.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Edinson Salas <edinsonsalas@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}

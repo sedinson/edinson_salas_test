@@ -1,0 +1,18 @@
+{
+  "name": "@distributed-lru/server",
+  "version": "1.0.0",
+  "description": "Geodistributed LRU cache server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Edinson Salas <edinsonsalas@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1"
+  }
+}

@@ -1,0 +1,513 @@
+{
+	"info": {
+		"_postman_id": "134eca14-b77a-40e7-a8b5-e2e2d066af36",
+		"name": "Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Barranquilla",
+			"item": [
+				{
+					"name": "Test Write",
+					"item": [
+						{
+							"name": "Write without expires",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "coordinates",
+										"value": "11.0089243690005,-74.83707117918837",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"param\": \"value\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{barranquilla}}/write/other",
+									"host": [
+										"{{barranquilla}}"
+									],
+									"path": [
+										"write",
+										"other"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Expires in 10.000ms",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "coordinates",
+										"value": "11.0089243690005,-74.83707117918837",
+										"type": "text"
+									},
+									{
+										"key": "expires",
+										"value": "10000",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"hello\": \"world\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{barranquilla}}/write/example",
+									"host": [
+										"{{barranquilla}}"
+									],
+									"path": [
+										"write",
+										"example"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Test Read",
+					"item": [
+						{
+							"name": "Read other",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "coordinates",
+										"value": "11.0089243690005,-74.83707117918837",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{barranquilla}}/read/other",
+									"host": [
+										"{{barranquilla}}"
+									],
+									"path": [
+										"read",
+										"other"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read example",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "coordinates",
+										"value": "11.0089243690005,-74.83707117918837",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{barranquilla}}/read/example",
+									"host": [
+										"{{barranquilla}}"
+									],
+									"path": [
+										"read",
+										"example"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Servers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "11.0089243690005,-74.83707117918837",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{barranquilla}}/servers",
+							"host": [
+								"{{barranquilla}}"
+							],
+							"path": [
+								"servers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nearest",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "11.0089243690005,-74.83707117918837",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{barranquilla}}/nearest",
+							"host": [
+								"{{barranquilla}}"
+							],
+							"path": [
+								"nearest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Keys",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "11.0089243690005,-74.83707117918837",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{barranquilla}}/keys",
+							"host": [
+								"{{barranquilla}}"
+							],
+							"path": [
+								"keys"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bogota",
+			"item": [
+				{
+					"name": "Read Ahoy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "4.624335,-74.063644",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{bogota}}/read/ahoy",
+							"host": [
+								"{{bogota}}"
+							],
+							"path": [
+								"read",
+								"ahoy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Write",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "11.0089243690005,-74.83707117918837",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hello\": \"world\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bogota}}/write/example",
+							"host": [
+								"{{bogota}}"
+							],
+							"path": [
+								"write",
+								"example"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Write ahoy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "11.0089243690005,-74.83707117918837",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hola\": \"konishiwa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bogota}}/write/ahoy",
+							"host": [
+								"{{bogota}}"
+							],
+							"path": [
+								"write",
+								"ahoy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Servers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "11.0089243690005,-74.83707117918837",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{bogota}}/servers",
+							"host": [
+								"{{bogota}}"
+							],
+							"path": [
+								"servers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nearest",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "11.0089243690005,-74.83707117918837",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{bogota}}/nearest",
+							"host": [
+								"{{bogota}}"
+							],
+							"path": [
+								"nearest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Keys",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "4.624335,-74.063644",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{bogota}}/keys",
+							"host": [
+								"{{bogota}}"
+							],
+							"path": [
+								"keys"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medellin",
+			"item": [
+				{
+					"name": "Write 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "11.0089243690005,-74.83707117918837",
+								"type": "text"
+							},
+							{
+								"key": "region",
+								"value": "medellin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"medallo\": \"mijo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{medellin}}/write/key1",
+							"host": [
+								"{{medellin}}"
+							],
+							"path": [
+								"write",
+								"key1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Write 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "11.0089243690005,-74.83707117918837",
+								"type": "text"
+							},
+							{
+								"key": "region",
+								"value": "medellin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Otra\": \"llave\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{medellin}}/write/key2",
+							"host": [
+								"{{medellin}}"
+							],
+							"path": [
+								"write",
+								"key2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Write 3",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "11.0089243690005,-74.83707117918837",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"llave\": \"key\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{medellin}}/write/key3",
+							"host": [
+								"{{medellin}}"
+							],
+							"path": [
+								"write",
+								"key3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Keys",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "coordinates",
+								"value": "6.230833,-75.590553",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{medellin}}/keys",
+							"host": [
+								"{{medellin}}"
+							],
+							"path": [
+								"keys"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

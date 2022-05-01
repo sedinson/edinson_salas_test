@@ -1,0 +1,20 @@
+{
+  "name": "@distributed-lru/questions",
+  "version": "1.0.0",
+  "description": "Question A and Question B",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "setupFiles": [
+      "dotenv/config"
+    ]
+  },
+  "author": "Edinson Salas <edinsonsalas@gmail.com>",
+  "license": "ISC"
+}

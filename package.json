@@ -1,0 +1,39 @@
+{
+  "name": "distributed-lru",
+  "version": "1.0.0",
+  "description": "Distributed LRU library and socket server",
+  "main": "index.js",
+  "workspaces": [
+    "src/@libs",
+    "src/communication",
+    "src/server",
+    "src/questions"
+  ],
+  "scripts": {
+    "communication": "dotenv -e .env -- npm start --workspace=src/communication",
+    "server:barranquilla": "dotenv -e .barranquilla.env -- npm start --workspace=src/server",
+    "server:bogota": "dotenv -e .bogota.env -- npm start --workspace=src/server",
+    "server:medellin": "dotenv -e .medellin.env -- npm start --workspace=src/server",
+    "test:questions": "npm test --workspace=src/questions"
+  },
+  "author": "Edinson Salas <edinsonsalas@gmail.com>",
+  "license": "ISC",
+  
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "setupFiles": [
+      "dotenv/config"
+    ]
+  },
+  "dependencies": {
+    "@distributed-lru/libs": "file:src/@libs",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^5.1.0",
+    "jest": "^28.0.3"
+  }
+}
