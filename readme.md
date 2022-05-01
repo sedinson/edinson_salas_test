@@ -60,7 +60,6 @@ This is an example of the request and response using postman:
 
 Here we can look the request was generated on **bogota**, but was redirected to **barranquilla** and the `region` header was added.
 
-
 ## How to use it
 
 1. Clone the project
@@ -85,3 +84,4 @@ Here we can look the request was generated on **bogota**, but was redirected to 
 - Improve the LRU library to handle binaries.
 - If the server has no the requested key, ask to the neighbors if they have the data and propagate the changes.
 - Using the public ip instead of coordinates to search the nearest server
+- Add test and coverage for this project
